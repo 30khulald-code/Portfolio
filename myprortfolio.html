@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+  <title>My family portfolio</title>
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+label {
+  color: black;
+  text-align: left;
+}
+        
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: blue;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: grey;
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+body {
+  font-family: 'Sofia';font-size: 22px;
+}
+
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Sofia;
+}
+h3 {
+  color: black;
+  text-align: left;
+}
+
+p {
+  color: red;
+  text-align: left;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: red;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+#Home {background-color: red;}
+#GameCenter {background-color: green;}
+#Projects {background-color: grey;}
+#About {background-color: orange;}
+#ContactUs {background-color: grey;}
+    
+/* style the table */
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow:hidden;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+    }
+    .table th,
+    .table td {
+        border: 1px solid #ddd;
+        padding: 12px;
+        text-align: left;
+        transition: background-color 0.3s;       
+    }
+    .table th{
+        background-color: skyblue;
+        color: white;
+    }
+    
+    .table tr:hover{
+        background-color: #f5f5f5;
+    }
+    .table td:hover {
+        background-color: #e0e0e0;
+    }
+    .table a {
+        color: darkblue;
+        text-decoration: none;
+    }
+    .table a:hover {
+        text-decoration: underline;
+    }
+
+</style>
+</head>
+<body>
+    <h1>My Family Portfolio</h1>
+    <button id="defaultOpen" class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
+    <button class="tablink" onclick="openPage('GameCenter', this, 'red')">GameCenter</button>
+    <button class="tablink" onclick="openPage('Projects', this, 'red')">Projects</button>
+    <button class="tablink" onclick="openPage('About', this, 'red')">About</button>
+    <button class="tablink" onclick="openPage('ContactUS', this, 'red')">ContactUs</button>
+        
+    <div id="Home" class="tabcontent"> 
+        <h3>Home Page</h3>
+        <p> This is the home page of my family portfolio</p>
+        <h4> Welcome to my Portfolio</h4>
+        <div class="container">
+        <h5>Devi's Family</h5>
+        <img src="#" class="rounded" alt="My Family" width="300" height="250">
+        </div>
+        </div>
+    
+    <div id="GameCenter" class="tabcontent"> 
+        <h3>Game Collection</h3>
+        <p> This is my game Collection </p>
+        </div>
+    
+    <div id="Projects" class="tabcontent"> 
+        <h3>Projects Collection</h3>
+        <p> This is my projects Collection </p>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Projects #</th>
+                        <th>Projects Name</th>
+                        <th>Lesson Learned</th>
+                    </tr>
+                
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td> <a href="#" target="_blank"></a>Project1.html</td>
+                        <td>what is html, javascript, time generator, image, colors</td>
+                        
+                    </tr>
+                    
+                <tr>
+                        <td>2</td>
+                        <td> <a href="#" target="_blank"></a>Project1.html</td>
+                        <td>what is html, javascript, time generator, image, colors</td>
+                        
+                    </tr>
+                    
+                     <tr>
+                        <td>3</td>
+                        <td> <a href="#" target="_blank"></a>Project1.html</td>
+                        <td>what is html, javascript, time generator, image, colors</td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
+        </div>
+    
+    <div id="About" class="tabcontent"> 
+        <h3>About US</h3>
+        <p> This is about my family </p>
+        </div>
+    
+    <div id="ContactUS" class="tabcontent"> 
+        <h3>Contact US</h3>
+        <p> Use the form to submit your request</p>
+        <div class="container">
+        <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname"placeholder="Your first name...">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+            
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="usa">United States</option>
+                <option value="canada">Canada</option>
+            </select>
+            <label for="state">State</label>
+            <input type="text" id="state" name="state" placeholder="Your current state ...">
+            
+             <label for="city">State</label>
+            <input type="text" id="city" name="city" placeholder="Your current city ...">
+            
+            <label for="subject">Message Box</label>
+            <textarea id="subject" name="subject" placeholder="What is the message about?" style="height:200px"></textarea>
+            
+            <input type="submit" value="Submit">    
+            
+            
+            </form>
+        </div>
+      </div>
+        
+        
+<script> 
+function openPage(pageName, elmnt,color) {
+    var i, tabcontent, tablink;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink")
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor ="";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+    
+}
+    document.getElementById("defaultOpen").click();
+</script>        
+        
+</body>
+    
+
+</html>
